@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kumar Aniket - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 67);
+            color: white;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(32, 32, 78);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(171, 151, 151);
+            font-size: 1rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(172, 136, 205);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+            margin: 60px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: purple;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection div {
+            width: 70%;
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: blueviolet;
+
+        }
+
+        text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 66vh;
+        }
+
+        .secondSection .text-gray {
+            color: gray;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8vw;
+
+        }
+
+        .imageTop {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .verticalTitle {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 1.1rem;
+            color: rgb(140, 182, 226);
+
+
+        }
+
+        .verticalDesc {
+            position: relative;
+            top: 85px;
+            color: rgb(118, 82, 82);
+            width: 150px;
+            font-size: 11px;
+        }
+
+        footer {
+            background-color: rgb(10, 25, 30);
+
+        }
+
+        footer .footerright {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        @media screen and (max-width: 1400px) {
+            .box {
+                flex-direction: column;
+
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .verticalTitle .verticalDesc {
+                left: 45px;
+
+            }
+
+            .secondSection .box {
+                width: 50vw;
+
+            }
+
+            nav {
+                flex-direction: column;
+                
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .secondSection {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 240vh !important;
+            }
+
+            .imageTop {
+                width: 23px;
+                position: relative;
+                top: 107px;
+                left: -9px;
+            }
+
+            .verticalTitle {
+                position: relative;
+                top: 79px;
+                width: 155px;
+                font-size: 1.1rem;
+                color: rgb(140, 182, 226);
+                margin: 0 25px;
+            }
+
+            .verticalDesc {
+                position: relative;
+                top: 85px;
+                color: rgb(118, 82, 82);
+                width: 150px;
+                font-size: 11px;
+                margin: 0 23px;
+            }
+
+            .leftsection div {
+                width: 58%;
+                text-align: center;
+            }
+
+            footer .footerright {
+                height: 7vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kumar Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi,My name is <span class="purple">Kumar Aniket</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com"><button class="btn">View Resume</button></a>
+                    <a href="https://github.com/Kumaraniketank"><button class="btn">Github</button></a>
+                </div>
+            </div>
+            <div class="rightsection"><img src="bg.png" alt=""></div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="imageTop" src="html.jpeg" alt="">
+                    <div class="verticalTitle">
+                        HTML CSS Developer (2019-2023)
+                    </div>
+                    <div class="verticalDesc">I have a solid foundation in HTML and CSS, which are the building blocks
+                        of web development. I've successfully utilized these technologies to create visually appealing
+                        and responsive web pages. My experience includes designing user-friendly interfaces, optimizing
+                        websites for various devices, and ensuring cross-browser compatibility.</div>
+                </div>
+                <div class="vertical">
+                    <img class="imageTop" src="py.jpeg" alt="">
+                    <div class="verticalTitle">
+                        Python Programmer (2020-2023)
+                    </div>
+                    <div class="verticalDesc">I have extensive experience as a Python programmer, with a proven track
+                        record of developing efficient and scalable solutions across a variety of domains. My expertise
+                        encompasses Python 3, along with a strong understanding of popular frameworks and libraries like
+                        Flask, NumPy, and Pandas. I've leveraged Python for tasks ranging data analysis to automation
+                        and machine learning</div>
+                </div>
+                <div class="vertical"><img class="imageTop" src="rjs.jpeg" alt="">
+                    <div class="verticalTitle">
+                        React js Developer (2022-2023)
+                    </div>
+                    <div class="verticalDesc">I have a substantial background as a React.js developer, specializing in
+                        building dynamic and interactive web applications. My experience includes developing single-page
+                        applications (SPAs) and component-based UIs that deliver exceptional user experiences. I am
+                        proficient in using React's core concepts such as components, state management, and props to
+                        create modular and maintainable code.</div>
+                </div>
+
+                <div class="vertical"><img class="imageTop" src="th.jpeg" alt="">
+                    <div class="verticalTitle">
+                        ML Engineer (2021-2023)
+                    </div>
+                    <div class="verticalDesc">I have a strong background as a Machine Learning engineer, with a focus on
+                        developing data-driven solutions that leverage cutting-edge ML and AI techniques. My experience
+                        spans across various domains, including natural language processing, computer vision, and
+                        predictive modeling.</div>
+                </div>
+                <div class="vertical"><img class="imageTop" src="da.jpeg" alt="">
+                    <div class="verticalTitle">
+                        Data Analytics (2022-2023)
+                    </div>
+                    <div class="verticalDesc">I bring a wealth of experience in the field of Data Analytics, where I've
+                        honed my skills in extracting valuable insights from complex datasets. My expertise includes
+                        data collection, cleaning, and transformation to prepare it for analysis. I am proficient in
+                        using tools such as Excel, SQL, and Python to manipulate and analyze data efficiently.</div>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+
+        <div class="footerright">
+            Copyright ©️ www.kumaraniketportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Data Analyst', 'ML Engineer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
