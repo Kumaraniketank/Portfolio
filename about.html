@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ">
+    <title>Kumar Aniket - Developer Portfolio About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 67);
+            color: white;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(32, 32, 78);
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(171, 151, 151);
+            font-size: 1rem;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 1.26rem;
+            color: gray;
+
+
+        }
+
+        .leftsection div {
+            width: 70%;
+        }
+
+        .rightsection img {
+            width: 60%;
+            border-radius: 50%;
+            border: 4px solid gray;
+
+        }
+
+        .purple {
+            color: blueviolet;
+
+        }
+
+        text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        #ap {
+            color: blueviolet;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .box {
+                flex-direction: column;
+
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            nav {
+                flex-direction: column;
+               
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+                
+                    width: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 174px 0;
+                    font-size: 1.56rem;
+                    color: gray;
+                
+            }
+        
+
+        .rightsection {
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+        }
+        body {
+                min-width: fit-content;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kumar Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"> <b>Hi,My name is <span class="purple">Kumar Aniket.</b></span>
+                <div><b>I am persuing B.Tech in Computer Science and Engineering.I am a passionate
+                        <span id="element"></span></b>
+                    <div><b>I am eager to embark on my journey as a <span id="ap"></span> and contribute my skills to
+                            your dynamic team.Throughout my academic journey, I developed a deep passion for coding and
+                            software development. My coursework in <span class="purple">Computer Science &
+                                Engineering</span> provided me with a solid foundation in programming languages such as
+                            C,C++,Java,Python, data structures, algorithms, and software design principles. I am excited
+                            to apply this knowledge in a real-world setting and continue to expand my skill set. </b>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection"><img src="pic.jpeg" alt=""></div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer.'],
+            typeSpeed: 80,
+        });
+    </script>
+    <script>
+        var typed = new Typed('#ap', {
+            strings: ['Software Developer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>

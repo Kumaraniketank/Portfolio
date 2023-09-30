@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kumar Aniket - Developer Portfolio Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 67);
+            color: white;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(32, 32, 78);
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(171, 151, 151);
+            font-size: 1rem;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        * {
+            
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 80%;
+            padding: 34px;
+            margin: auto;
+        }
+
+        
+        p {
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Sriracha', cursive;
+        }
+
+        input,
+        textarea {
+
+            border: 2px solid black;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            width: 80%;
+            margin: 11px 0px;
+            padding: 7px;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            color: white;
+            background: purple;
+            padding: 8px 12px;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+
+        .bg {
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+
+        @media screen and (max-width: 1400px) {
+            .box {
+                flex-direction: column;
+
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            nav {
+                flex-direction: column;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kumar Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <p>Enter your details and submit this form to contact you soon </p>
+
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your Age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <textarea name="desc" id="desc" cols="30" rows="10"
+                placeholder="Enter any other information here"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

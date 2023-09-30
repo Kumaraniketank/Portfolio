@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kumar Aniket - Developer Portfolio Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 67);
+            color: white;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(32, 32, 78);
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(171, 151, 151);
+            font-size: 1rem;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .services {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: segoe UI;
+        }
+
+        .services_container {
+            margin-top: 50px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .services {
+            color: brown;
+        }
+
+        .service {
+            height: 200px;
+            width: 37%;
+            display: flex;
+            margin-top: 20px;
+            min-width: fit-content;
+            color: rgb(250, 180, 95);
+        }
+
+
+        .service_img {
+            width: 50%;
+            height: 200px;
+            margin: 0 25vh;
+            display: flex;
+
+        }
+
+        .service_details {
+            width: 40%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+        }
+
+        .service_padd {
+
+            margin: 0vh 15vh;
+        }
+
+        @media screen and (max-width: 1400px) {
+
+            .box {
+                flex-direction: column;
+
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            nav {
+                flex-direction: column;
+
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 174px 0;
+                font-size: 1.56rem;
+                color: gray;
+
+            }
+
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            .service_img {
+                width: 50%;
+                height: 200px;
+                margin: 0 -3vh;
+                display: flex;
+            }
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kumar Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="services">
+            <h1>What We Do</h1>
+            <div class="container services_container">
+
+                <div class="service">
+                    <div class="service_img">
+                        <img
+                            src="https://www.analyticsinsight.net/wp-content/uploads/2020/11/Artificial-Intelligence-5.jpg" />
+                    </div>
+
+                    <div class="service_details">
+                        <div class="service_padd">
+                            <h1 class="service_title">Web Development</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="service">
+                    <div class="service_img">
+                        <img
+                            src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/07/1_Ra02AqsQlC0KV229EvM98g.jpg" />
+                    </div>
+
+                    <div class="service_details">
+                        <div class="service_padd">
+                            <h1 class="service_title">Data Analysis</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service_img">
+                        <img
+                            src="https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?height=456&width=711&fit=bounds" />
+                    </div>
+
+                    <div class="service_details">
+                        <div class="service_padd">
+                            <h1 class="service_title">Machine Learning</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service_img">
+                        <img
+                            src="https://contentstatic.techgig.com/photo/82905582/5-must-have-python-developer-skills-to-be-successful.jpg?91397" />
+                    </div>
+
+                    <div class="service_details">
+                        <div class="service_padd">
+                            <h1 class="service_title">Python Programmer</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
